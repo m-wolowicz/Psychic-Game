@@ -1,0 +1,78 @@
+<!-- Homework Assingment: JavaScript Assignment Option One: Psychic Game (Basic) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>The Psychic Game</title>
+
+	<!-- Linking Normalize.css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+
+	<!-- Setting the Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- BOOTSTRAP 3: Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Linking my own JAVASCRIPT -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+<body>
+
+<!-- Describe the instructions of the game to the user -->
+<div class="container">
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1>The Psychic Game</h1>
+			<div>
+				<p>Try to guess which letter is your computer thinking of right now. (Choose from a to z) </p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row" style="background-color: #eeeeee;">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<h4>Wins:</h4>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<h4 id="wins">0</h4>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<h4>Losses:</h4>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<h4 id="losses">0</h4>
+		</div>
+	</div>
+
+	<div class="row" style="background-color: #eeeeee;">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<h4>Guesses Left:</h4>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<h4 id="guessesLeft">10</h4>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<h4>Letters You Have Tried So Far:</h4>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<h4 id="soFar"></h4>
+		</div>
+	</div>
+
+</div>
+	
+</body>
+</html>
