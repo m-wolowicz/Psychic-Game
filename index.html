@@ -21,6 +21,12 @@
 	<!-- Linking my own JAVASCRIPT -->
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
+	<!-- Linking my own CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Linking Google Web Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:900|Raleway:400,700,800,900" rel="stylesheet">
+
 </head>
 <body>
 
@@ -28,50 +34,64 @@
 <div class="container">
 
 	<div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<h1>The Psychic Game</h1>
-			<div>
-				<p>Try to guess which letter is your computer thinking of right now. (Choose from a to z) </p>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+
+		<!-- Instructions of the game -->
+			<img src="assets/images/magic.svg" alt="Crystal Ball" class="center-block">
+			<h1 class="text-center text-uppercase">The Psychic Game</h1>
+			<div class="text-center">
+				<p>Try to guess which letter is your computer thinking of right now.
+				<br>(Choose from a to z) </p>
 			</div>
+
+			<!-- Game Stats in Sub-Rows -->
+
+				<!-- WINS -->
+				<div class="row rowStats">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 rowBkgd">
+						<h4>Wins:</h4>
+					</div>
+
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 rowBkgd">
+						<h4 id="wins">0</h4>
+					</div>
+				</div>
+
+				<!-- LOSSES -->
+				<div class="row rowStats">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<h4>Losses:</h4>
+					</div>
+
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<h4 id="losses">0</h4>
+					</div>
+				</div>
+
+				<!-- GUESSES LEFT -->
+				<div class="row rowStats">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 rowBkgd">
+						<h4>Guesses Left:</h4>
+					</div>
+
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 rowBkgd">
+						<h4 id="guessesLeft">10</h4>
+					</div>
+				</div>
+
+				<!-- LETTERS TRIED SO FAR -->
+				<div class="row rowStats">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<h4>Letters You Have Tried So Far:</h4>
+					</div>
+
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<h4 id="soFar"></h4>
+					</div>
+				</div>
+
 		</div>
 	</div>
-
-	<div class="row" style="background-color: #eeeeee;">
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<h4>Wins:</h4>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<h4 id="wins">0</h4>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<h4>Losses:</h4>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<h4 id="losses">0</h4>
-		</div>
-	</div>
-
-	<div class="row" style="background-color: #eeeeee;">
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<h4>Guesses Left:</h4>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<h4 id="guessesLeft">10</h4>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<h4>Letters You Have Tried So Far:</h4>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<h4 id="soFar"></h4>
-		</div>
-	</div>
-
 </div>
 	
 </body>

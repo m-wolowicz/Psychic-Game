@@ -1,0 +1,44 @@
+/*Creating my own CSS Style for the game*/
+
+/*Styles that apply to the entire page*/
+body {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+img {
+	max-width: 25%;
+	margin-top: 20px;
+}
+
+h1 {
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 350%;
+	margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+.rowStats {
+	font-weight: bold;
+	font-size: 150%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+    
+.rowBkgd {
+	background-color: #eeeeee;
+	color: #212121; 
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.rowStats:last-child {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #eeeeee;
+}
