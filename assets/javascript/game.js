@@ -41,15 +41,21 @@ document.onkeyup = function(event) {
 
 	//Check if the user entered the correct letters
 		if (event.keyCode >= 65 && event.keyCode <= 90) { //If the letter pressed IS part of the alphabet, then run the comparison:
-			//If user guesses right,increase the wins count, and decrease number of guessesLeft:
+			//If user guesses right, increase the wins count, reset guesses left, reset so far, pick a new letter:
 			if (userGuess == compChoice) {
 				wins++;
 				guessesLeft--;
+				soFar = [];
+				guessesLeft = 10;
 				//Display updated stats to user:
+				document.getElementById("soFar").innerHTML = soFar.join(", ");
 				document.getElementById("wins").innerHTML = wins;
 				document.getElementById("guessesLeft").innerHTML = guessesLeft;
+				document.getElementById("guessesLeft").innerHTML = guessesLeft;
+				// Alert the user
 				alert("You ARE a psychic! How did you know I was thinking of the letter '" + userGuess + "' ?");
-				//now Choose another letter
+				alert("Do you want to try again?");
+				//Choose another letter
 				compChoice = theAlphabet[Math.floor(Math.random() * theAlphabet.length)];
 				console.log("The computer has chosen the letter: " + compChoice);	
 
@@ -61,6 +67,7 @@ document.onkeyup = function(event) {
 				document.getElementById("guessesLeft").innerHTML = guessesLeft;
 			}
 		} else { //If user input is not a letter from the alphabet
+			// Alert the user
 			alert("Please be sure to select a letter from the Alphabet (from a to z)");
 		}
 
@@ -68,11 +75,13 @@ document.onkeyup = function(event) {
 		//If the guessesLeft == 0, reset guessesLeft back to 10, and empty the soFar guesses, pick a new letter.
 		if (guessesLeft == 0) {
 			guessesLeft = 10;
-			document.getElementById("guessesLeft").innerHTML = guessesLeft;
 			soFar = [];
+			//Display updated stats to user:
+			document.getElementById("guessesLeft").innerHTML = guessesLeft;
 			document.getElementById("soFar").innerHTML = soFar.join(", ");
+			// Alert the user
 			alert("GAME OVER")
-			alert("OH NO! You have run out of guesses. Do you want to try again?")
+			alert("OH NO! Looks like you ran out of guesses. Do you want to try again?")
 			//now Choose another letter
 			compChoice = theAlphabet[Math.floor(Math.random() * theAlphabet.length)];
 			console.log("The computer has chosen the letter: " + compChoice);
